@@ -1,0 +1,114 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22-May-2024, 2:12:52 pm
+    Author     : PRANTIK
+*/
+body {
+    background-image: url("bb.jpg");
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.website-name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.tagline {
+    font-size: 14px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.oval-input {
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4caf50;
+    border: none;
+    box-shadow: 0px 5px 0px #2e8b57;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    box-shadow: 0px 3px 0px #2e8b57;
+    transform: translateY(2px);
+}
+
+.oval-button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Additional styles for the star rating */
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    font-size: 0;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2em;
+    padding: 0.1em;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffc700;
+}
+
+.star-rating input:checked + label:hover,
+.star-rating input:checked + label:hover ~ label,
+.star-rating input:checked ~ label:hover,
+.star-rating input:checked ~ label:hover ~ label,
+.star-rating label:hover ~ input:checked ~ label {
+    color: #ffed85;
+}
